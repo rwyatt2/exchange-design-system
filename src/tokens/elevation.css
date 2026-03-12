@@ -1,0 +1,28 @@
+/* =============================================
+   Exchange Design System — Elevation (Shadows & Z-Index)
+   ============================================= */
+
+:root {
+  /* ── Shadows ── */
+  --exds-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08); /* Buttons, simple cards */
+  --exds-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Dropdowns */
+  --exds-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.12); /* Popovers, medium elevation */
+  --exds-shadow-xl: 0 8px 32px rgba(0, 0, 0, 0.16); /* Modals, high elevation */
+  /* Specific component shadows */
+  --exds-shadow-card: 0 1px 4px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.04);
+  --exds-shadow-card-hover: 0 4px 12px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --exds-shadow-modal: 0 12px 48px rgba(0, 0, 0, 0.2);
+
+  /* ── Z-Index Scale ── */
+  --exds-z-hide: -1;
+  --exds-z-base: 0;
+  --exds-z-docked: 10;
+  --exds-z-dropdown: 1000;
+  --exds-z-sticky: 1100;
+  --exds-z-banner: 1200;
+  --exds-z-overlay: 1300;
+  --exds-z-modal: 1400;
+  --exds-z-popover: 1500;
+  --exds-z-toast: 1600;
+  --exds-z-tooltip: 1700;
+}

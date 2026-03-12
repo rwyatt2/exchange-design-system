@@ -1,0 +1,65 @@
+.exds-popover-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.exds-popover-trigger {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.exds-popover {
+  position: absolute;
+  z-index: var(--exds-z-popover);
+  background: var(--exds-color-surface);
+  border: 1px solid var(--exds-color-border-subtle);
+  border-radius: var(--exds-radius-lg);
+  box-shadow: var(--exds-shadow-lg);
+  min-width: 200px;
+  max-width: 320px;
+  animation: exds-popover-in var(--exds-transition-base) var(--exds-ease-out);
+}
+
+@keyframes exds-popover-in {
+  from { opacity: 0; transform: scale(0.96) translateY(-4px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.exds-popover--bottom {
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.exds-popover--bottom.exds-popover {
+  animation-name: exds-popover-in;
+}
+
+.exds-popover--top {
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.exds-popover--left {
+  right: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.exds-popover--right {
+  left: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.exds-popover__arrow {
+  display: none; /* Simplified — decorative arrow can be added per-context */
+}
+
+.exds-popover__content {
+  padding: var(--exds-space-5);
+  font-family: var(--exds-font-primary);
+  font-size: var(--exds-text-sm);
+  color: var(--exds-color-text-primary);
+  line-height: var(--exds-leading-relaxed, 1.6);
+}

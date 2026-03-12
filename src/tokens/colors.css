@@ -1,0 +1,74 @@
+/* =============================================
+   Exchange Design System — Color Tokens
+   Reverse-engineered from DX_ Files Figma
+   ============================================= */
+
+:root {
+  /* ── Brand Colors ── */
+  --exds-color-brand-900: #0b0d0f;
+  --exds-color-brand-800: #12181c;
+  --exds-color-brand-700: #1a4265;
+  --exds-color-brand-600: #20262c;
+  --exds-color-brand-500: #255f82;
+  --exds-color-brand-400: #3459a7;
+  --exds-color-brand-300: #00a3c4;
+  --exds-color-brand-200: #19daff;
+
+  /* ── Primary (Action Blue) ── */
+  --exds-color-primary: #3459a7;
+  --exds-color-primary-hover: #2a4a8f;
+  --exds-color-primary-active: #1a4265;
+  --exds-color-primary-light: #e8edf5;
+
+  /* ── Accent (Cyan / Teal) ── */
+  --exds-color-accent: #00a3c4;
+  --exds-color-accent-bright: #19daff;
+  --exds-color-accent-teal: #255f82;
+
+  /* ── Semantic ── */
+  --exds-color-success: #008140;
+  --exds-color-success-light: #128020;
+  --exds-color-error: #cc2427;
+  --exds-color-error-light: #fde8e8;
+  --exds-color-warning: #d4a017;
+  --exds-color-warning-light: #fef3cd;
+  --exds-color-info: #3459a7;
+  --exds-color-info-light: #e8edf5;
+
+  /* ── Neutral Scale ── */
+  --exds-color-neutral-900: #141414;
+  --exds-color-neutral-800: #20262c;
+  --exds-color-neutral-700: #3e4b59;
+  --exds-color-neutral-600: #505961;
+  --exds-color-neutral-500: #7c7c7c;
+  --exds-color-neutral-400: #808c97;
+  --exds-color-neutral-300: #afb0af;
+  --exds-color-neutral-200: #c4c4c4;
+  --exds-color-neutral-150: #d4d4d4;
+  --exds-color-neutral-100: #dadada;
+  --exds-color-neutral-75: #e5e8eb;
+  --exds-color-neutral-50: #f4f4f4;
+
+  /* ── Surface / Background ── */
+  --exds-color-surface: #ffffff;
+  --exds-color-surface-alt: #fafafa;
+  --exds-color-surface-raised: #f8f8f8;
+  --exds-color-surface-dark: #12181c;
+  --exds-color-surface-dark-alt: #1a4265;
+
+  /* ── Text ── */
+  --exds-color-text-primary: #141414;
+  --exds-color-text-secondary: #505961;
+  --exds-color-text-tertiary: #7c7c7c;
+  --exds-color-text-disabled: #afb0af;
+  --exds-color-text-inverse: #ffffff;
+  --exds-color-text-link: #3459a7;
+  --exds-color-text-link-hover: #1a4265;
+
+  /* ── Border ── */
+  --exds-color-border: #d4d4d4;
+  --exds-color-border-strong: #afb0af;
+  --exds-color-border-subtle: #e5e8eb;
+  --exds-color-border-focus: #3459a7;
+  --exds-color-border-input: #c8c8c8;
+}

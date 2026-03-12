@@ -1,0 +1,69 @@
+.markdown-body {
+  font-family: inherit;
+  color: var(--exds-color-text-primary);
+  line-height: 1.6;
+}
+
+.markdown-body h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--exds-color-text-primary);
+}
+
+.markdown-body h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--exds-color-text-primary);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--exds-color-border);
+}
+
+.markdown-body h3 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.markdown-body li {
+  margin-bottom: 0.5rem;
+}
+
+.markdown-body code {
+  font-family: var(--exds-font-mono);
+  background-color: var(--exds-color-neutral-100);
+  padding: 0.2em 0.4em;
+  border-radius: var(--exds-radius-sm);
+  font-size: 0.9em;
+  color: var(--exds-color-brand-700);
+}
+
+.markdown-body pre {
+  background-color: var(--exds-color-neutral-900);
+  padding: var(--exds-space-5);
+  border-radius: var(--exds-radius-lg);
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  color: #e0e0e0;
+  padding: 0;
+  font-size: var(--exds-text-sm);
+  line-height: 1.6;
+}
+

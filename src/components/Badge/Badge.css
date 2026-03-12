@@ -1,0 +1,59 @@
+.exds-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--exds-font-primary);
+  font-weight: var(--exds-font-regular);
+  border-radius: var(--exds-radius-sm);
+  white-space: nowrap;
+  border: 1px solid;
+  line-height: 1;
+}
+
+.exds-badge--sm {
+  padding: 2px 6px;
+  font-size: var(--exds-text-2xs);
+}
+.exds-badge--md {
+  padding: 3px 10px;
+  font-size: var(--exds-text-xs);
+}
+.exds-badge--lg {
+  padding: 4px 12px;
+  font-size: var(--exds-text-sm);
+}
+
+.exds-badge--default {
+  background: var(--exds-color-neutral-50);
+  color: var(--exds-color-text-primary);
+  border-color: var(--exds-color-border);
+}
+.exds-badge--primary {
+  background: var(--exds-color-primary-light);
+  color: var(--exds-color-primary);
+  border-color: var(--exds-color-primary);
+}
+.exds-badge--success {
+  background: #e6f4ec;
+  color: var(--exds-color-success);
+  border-color: var(--exds-color-success);
+}
+.exds-badge--error {
+  background: var(--exds-color-error-light);
+  color: var(--exds-color-error);
+  border-color: var(--exds-color-error);
+}
+.exds-badge--warning {
+  background: var(--exds-color-warning-light);
+  color: #8a6914;
+  border-color: var(--exds-color-warning);
+}
+.exds-badge--info {
+  background: #e1f5fe;
+  color: var(--exds-color-accent-teal);
+  border-color: var(--exds-color-accent);
+}
+.exds-badge--dark {
+  background: var(--exds-color-neutral-900);
+  color: var(--exds-color-text-inverse);
+  border-color: var(--exds-color-neutral-900);
+}

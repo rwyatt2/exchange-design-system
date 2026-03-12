@@ -1,0 +1,103 @@
+.exds-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--exds-space-3);
+  font-family: var(--exds-font-primary);
+  font-weight: var(--exds-font-semibold);
+  border: 1.5px solid transparent;
+  border-radius: var(--exds-radius-sm);
+  cursor: pointer;
+  transition: all var(--exds-transition-base);
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.exds-button:focus-visible {
+  outline: 2px solid var(--exds-color-border-focus);
+  outline-offset: 2px;
+}
+
+/* Sizes */
+.exds-button--sm {
+  padding: 6px 12px;
+  font-size: var(--exds-text-xs);
+}
+.exds-button--md {
+  padding: 8px 20px;
+  font-size: var(--exds-text-base);
+}
+.exds-button--lg {
+  padding: 12px 28px;
+  font-size: var(--exds-text-md);
+}
+
+/* Variants */
+.exds-button--primary {
+  background: var(--exds-color-primary);
+  color: var(--exds-color-text-inverse);
+  border-color: var(--exds-color-primary);
+}
+.exds-button--primary:hover:not(:disabled) {
+  background: var(--exds-color-primary-hover);
+  border-color: var(--exds-color-primary-hover);
+  box-shadow: var(--exds-shadow-sm);
+}
+.exds-button--primary:active:not(:disabled) {
+  background: var(--exds-color-primary-active);
+}
+
+.exds-button--secondary {
+  background: transparent;
+  color: var(--exds-color-primary);
+  border-color: var(--exds-color-primary);
+}
+.exds-button--secondary:hover:not(:disabled) {
+  background: var(--exds-color-primary-light);
+}
+
+.exds-button--ghost {
+  background: transparent;
+  color: var(--exds-color-text-primary);
+  border-color: var(--exds-color-border);
+}
+.exds-button--ghost:hover:not(:disabled) {
+  background: var(--exds-color-neutral-50);
+  border-color: var(--exds-color-border-strong);
+}
+
+.exds-button--danger {
+  background: var(--exds-color-error);
+  color: var(--exds-color-text-inverse);
+  border-color: var(--exds-color-error);
+}
+.exds-button--danger:hover:not(:disabled) {
+  background: #b01f22;
+}
+
+.exds-button--text {
+  background: transparent;
+  color: var(--exds-color-text-link);
+  border: none;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.exds-button--text:hover:not(:disabled) {
+  color: var(--exds-color-text-link-hover);
+  text-decoration: underline;
+}
+
+.exds-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.exds-button--full {
+  width: 100%;
+}
+
+.exds-button__icon {
+  display: inline-flex;
+  font-size: 1.1em;
+}

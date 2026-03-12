@@ -1,0 +1,69 @@
+.exds-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--exds-color-border-subtle);
+}
+
+.exds-tabs__tab {
+  font-family: var(--exds-font-primary);
+  font-size: var(--exds-text-md);
+  font-weight: var(--exds-font-regular);
+  color: var(--exds-color-text-secondary);
+  background: transparent;
+  border: none;
+  padding: var(--exds-space-4) var(--exds-space-7);
+  cursor: pointer;
+  position: relative;
+  transition: all var(--exds-transition-base);
+  display: flex;
+  align-items: center;
+  gap: var(--exds-space-3);
+  white-space: nowrap;
+}
+
+.exds-tabs__tab::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: transparent;
+  transition: background var(--exds-transition-base);
+}
+
+.exds-tabs__tab:hover {
+  color: var(--exds-color-text-primary);
+}
+
+.exds-tabs__tab--active {
+  color: var(--exds-color-primary);
+  font-weight: var(--exds-font-semibold);
+}
+
+.exds-tabs__tab--active::after {
+  background: var(--exds-color-primary);
+}
+
+/* Pill variant */
+.exds-tabs--pill {
+  border-bottom: none;
+  gap: var(--exds-space-3);
+}
+.exds-tabs--pill .exds-tabs__tab {
+  border-radius: var(--exds-radius-pill);
+  padding: var(--exds-space-3) var(--exds-space-5);
+  font-size: var(--exds-text-base);
+}
+.exds-tabs--pill .exds-tabs__tab::after {
+  display: none;
+}
+.exds-tabs--pill .exds-tabs__tab--active {
+  background: var(--exds-color-primary);
+  color: var(--exds-color-text-inverse);
+}
+
+.exds-tabs__icon {
+  font-size: 1.1em;
+  display: inline-flex;
+}

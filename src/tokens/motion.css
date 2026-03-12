@@ -1,0 +1,24 @@
+/* =============================================
+   Exchange Design System — Motion (Transitions & Animation)
+   ============================================= */
+
+:root {
+  /* ── Duration ── */
+  --exds-duration-fast: 150ms; /* Hover states, micro-interactions */
+  --exds-duration-base: 250ms; /* Standard transitions */
+  --exds-duration-slow: 350ms; /* Modals, large surface movement */
+  --exds-duration-slower: 500ms; /* Complex choreography */
+
+  /* ── Easing ── */
+  --exds-ease-linear: linear;
+  --exds-ease-in: cubic-bezier(0.4, 0, 1, 1);    /* Enter screen */
+  --exds-ease-out: cubic-bezier(0, 0, 0.2, 1);   /* Leave screen */
+  --exds-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1); /* Point to point */
+  --exds-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1); /* Playful bounciness */
+
+  /* ── Transitions ── */
+  --exds-transition-fast: var(--exds-duration-fast) var(--exds-ease-in-out);
+  --exds-transition-base: var(--exds-duration-base) var(--exds-ease-in-out);
+  --exds-transition-slow: var(--exds-duration-slow) var(--exds-ease-in-out);
+  --exds-transition-spring: var(--exds-duration-slow) var(--exds-ease-spring);
+}

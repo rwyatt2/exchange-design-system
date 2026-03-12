@@ -1,0 +1,88 @@
+.exds-pagination {
+  display: flex;
+  align-items: center;
+  gap: var(--exds-space-2);
+  flex-wrap: wrap;
+}
+
+.exds-pagination__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--exds-space-2);
+  padding: var(--exds-space-2) var(--exds-space-4);
+  background: var(--exds-color-surface);
+  border: 1px solid var(--exds-color-border);
+  border-radius: var(--exds-radius-md);
+  color: var(--exds-color-text-secondary);
+  font-family: var(--exds-font-primary);
+  font-size: var(--exds-text-sm);
+  font-weight: var(--exds-font-medium);
+  cursor: pointer;
+  transition: all var(--exds-transition-fast);
+}
+
+.exds-pagination__btn:hover:not(:disabled) {
+  background: var(--exds-color-surface-alt);
+  border-color: var(--exds-color-border-strong);
+  color: var(--exds-color-text-primary);
+}
+
+.exds-pagination__btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.exds-pagination__page {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 var(--exds-space-2);
+  background: var(--exds-color-surface);
+  border: 1px solid var(--exds-color-border);
+  border-radius: var(--exds-radius-md);
+  color: var(--exds-color-text-secondary);
+  font-family: var(--exds-font-primary);
+  font-size: var(--exds-text-sm);
+  cursor: pointer;
+  transition: all var(--exds-transition-fast);
+}
+
+.exds-pagination__page:hover {
+  background: var(--exds-color-surface-alt);
+  border-color: var(--exds-color-border-strong);
+  color: var(--exds-color-text-primary);
+}
+
+.exds-pagination__page--active {
+  background: var(--exds-color-primary);
+  border-color: var(--exds-color-primary);
+  color: #fff;
+  font-weight: var(--exds-font-semibold);
+  cursor: default;
+}
+
+.exds-pagination__page--active:hover {
+  background: var(--exds-color-primary-hover);
+  border-color: var(--exds-color-primary-hover);
+  color: #fff;
+}
+
+.exds-pagination__ellipsis {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  color: var(--exds-color-text-tertiary);
+  font-size: var(--exds-text-sm);
+  user-select: none;
+}
+
+.exds-pagination__label {
+  font-size: var(--exds-text-sm);
+  color: var(--exds-color-text-secondary);
+  padding: 0 var(--exds-space-3);
+  font-family: var(--exds-font-mono);
+}

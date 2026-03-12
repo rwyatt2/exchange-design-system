@@ -1,0 +1,67 @@
+.exds-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--exds-space-2);
+  border-radius: var(--exds-radius-xl);
+  font-family: var(--exds-font-primary);
+  font-weight: var(--exds-font-medium);
+  white-space: nowrap;
+  transition: all var(--exds-transition-fast);
+}
+
+/* Sizes */
+.exds-tag--sm {
+  font-size: var(--exds-text-2xs);
+  padding: 2px var(--exds-space-3);
+}
+
+.exds-tag--md {
+  font-size: var(--exds-text-xs);
+  padding: 4px var(--exds-space-4);
+}
+
+.exds-tag--lg {
+  font-size: var(--exds-text-sm);
+  padding: var(--exds-space-2) var(--exds-space-5);
+}
+
+/* Filled variant (default) */
+.exds-tag--filled {
+  background: var(--tag-color, var(--exds-color-primary-light));
+  color: var(--exds-color-primary);
+  border: 1px solid transparent;
+}
+
+/* Outline variant */
+.exds-tag--outline {
+  background: transparent;
+  color: var(--tag-color, var(--exds-color-primary));
+  border: 1px solid var(--tag-color, var(--exds-color-primary));
+}
+
+.exds-tag__label {
+  line-height: 1;
+}
+
+.exds-tag__remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: inherit;
+  opacity: 0.7;
+  transition: opacity var(--exds-transition-fast);
+  line-height: 1;
+}
+
+.exds-tag__remove:hover {
+  opacity: 1;
+}
+
+.exds-tag__remove:focus-visible {
+  outline: 2px solid var(--exds-color-border-focus);
+  border-radius: var(--exds-radius-sm);
+}

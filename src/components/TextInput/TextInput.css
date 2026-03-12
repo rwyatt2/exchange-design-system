@@ -1,0 +1,59 @@
+.exds-input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.exds-input__label {
+  font-family: var(--exds-font-primary);
+  font-size: var(--exds-text-xs);
+  font-weight: var(--exds-font-semibold);
+  color: var(--exds-color-text-secondary);
+}
+
+.exds-input__field {
+  font-family: var(--exds-font-primary);
+  font-size: var(--exds-text-base);
+  color: var(--exds-color-text-primary);
+  background: var(--exds-color-surface);
+  border: 1px solid var(--exds-color-border-input);
+  border-radius: var(--exds-radius-sm);
+  transition: all var(--exds-transition-base);
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.exds-input__field--sm { padding: 6px 10px; }
+.exds-input__field--md { padding: 8px 12px; }
+.exds-input__field--lg { padding: 12px 14px; }
+
+.exds-input__field:focus {
+  border-color: var(--exds-color-border-focus);
+  box-shadow: 0 0 0 3px rgba(52, 89, 167, 0.12);
+}
+
+.exds-input--error .exds-input__field {
+  border-color: var(--exds-color-error);
+}
+.exds-input--error .exds-input__field:focus {
+  box-shadow: 0 0 0 3px rgba(204, 36, 39, 0.12);
+}
+
+.exds-input--disabled .exds-input__field {
+  background: var(--exds-color-neutral-50);
+  color: var(--exds-color-text-disabled);
+  cursor: not-allowed;
+}
+
+.exds-input--readonly .exds-input__field {
+  background: var(--exds-color-neutral-50);
+}
+
+.exds-input__helper {
+  font-size: var(--exds-text-xs);
+  color: var(--exds-color-text-tertiary);
+}
+.exds-input__helper--error {
+  color: var(--exds-color-error);
+}

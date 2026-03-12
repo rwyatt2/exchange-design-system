@@ -1,0 +1,14 @@
+/* =============================================
+   Exchange Design System — Radii (Border Radius)
+   ============================================= */
+
+:root {
+  /* ── Border Radii ── */
+  --exds-radius-none: 0;
+  --exds-radius-sm: 3px;    /* Checkboxes, small inputs */
+  --exds-radius-md: 4px;    /* Buttons, standard inputs, cards */
+  --exds-radius-lg: 8px;    /* Modals, large elevated cards, tooltips */
+  --exds-radius-xl: 20px;   /* Large panels */
+  --exds-radius-pill: 100px;/* Pills, fully rounded buttons */
+  --exds-radius-circle: 50%;/* Avatars, circular icons */
+}

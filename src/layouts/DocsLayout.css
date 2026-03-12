@@ -1,0 +1,190 @@
+/* =============================================
+   Documentation Site Layout
+   ============================================= */
+
+.docs {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--exds-color-surface-alt);
+}
+
+/* ── Header ── */
+.docs__header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--exds-header-height);
+  padding: 0 var(--exds-space-7);
+  background: var(--exds-color-surface-dark);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.docs__header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--exds-space-5);
+}
+
+.docs__menu-btn {
+  background: none;
+  border: none;
+  color: var(--exds-color-text-inverse);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--exds-radius-sm);
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+  transition: opacity var(--exds-transition-fast);
+}
+.docs__menu-btn:hover { opacity: 1; }
+
+.docs__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--exds-space-4);
+  text-decoration: none;
+  color: var(--exds-color-text-inverse);
+  transition: opacity var(--exds-transition-fast);
+}
+
+.docs__logo:hover {
+  color: var(--exds-color-text-inverse);
+  opacity: 0.85;
+}
+
+.docs__logo:hover .docs__logo-accent {
+  opacity: 1;
+}
+
+.docs__logo-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.docs__logo-text {
+  font-family: var(--exds-font-primary);
+  font-size: var(--exds-text-md);
+  font-weight: var(--exds-font-semibold);
+  letter-spacing: var(--exds-tracking-tight);
+}
+
+.docs__logo-accent {
+  font-weight: var(--exds-font-light);
+  opacity: 0.7;
+  transition: opacity var(--exds-transition-fast);
+}
+
+.docs__header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--exds-space-5);
+}
+
+.docs__version {
+  font-family: var(--exds-font-mono);
+  font-size: var(--exds-text-xs);
+  color: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.08);
+  padding: 3px 8px;
+  border-radius: var(--exds-radius-sm);
+}
+
+/* ── Body ── */
+.docs__body {
+  display: flex;
+  flex: 1;
+}
+
+/* ── Sidebar ── */
+.docs__sidebar {
+  width: var(--exds-sidebar-width);
+  flex-shrink: 0;
+  background: var(--exds-color-surface);
+  border-right: 1px solid var(--exds-color-border-subtle);
+  padding: var(--exds-space-7) 0;
+  overflow-y: auto;
+  height: calc(100vh - var(--exds-header-height));
+  position: sticky;
+  top: var(--exds-header-height);
+  transition: margin-left var(--exds-transition-slow), opacity var(--exds-transition-slow);
+}
+
+.docs__sidebar--closed {
+  margin-left: calc(-1 * var(--exds-sidebar-width));
+  opacity: 0;
+  pointer-events: none;
+}
+
+.docs__nav-section {
+  margin-bottom: var(--exds-space-7);
+}
+
+.docs__nav-title {
+  font-family: var(--exds-font-primary);
+  font-size: var(--exds-text-2xs);
+  font-weight: var(--exds-font-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--exds-tracking-caps);
+  color: var(--exds-color-text-tertiary);
+  padding: 0 var(--exds-space-7);
+  margin: 0 0 var(--exds-space-3) 0;
+}
+
+.docs__nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.docs__nav-link {
+  display: block;
+  font-family: var(--exds-font-primary);
+  font-size: var(--exds-text-base);
+  color: var(--exds-color-text-secondary);
+  text-decoration: none;
+  padding: var(--exds-space-3) var(--exds-space-7);
+  border-left: 3px solid transparent;
+  transition: all var(--exds-transition-fast);
+}
+
+.docs__nav-link:hover {
+  color: var(--exds-color-text-primary);
+  background: var(--exds-color-surface-alt);
+}
+
+.docs__nav-link--active {
+  color: var(--exds-color-primary);
+  background: var(--exds-color-primary-light);
+  border-left-color: var(--exds-color-primary);
+  font-weight: var(--exds-font-semibold);
+}
+
+/* ── Main Content ── */
+.docs__main {
+  flex: 1;
+  min-width: 0;
+  padding: var(--exds-space-10) var(--exds-space-12);
+  max-width: 960px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .docs__sidebar {
+    position: fixed;
+    left: 0;
+    top: var(--exds-header-height);
+    z-index: 90;
+    box-shadow: var(--exds-shadow-xl);
+  }
+  .docs__sidebar--closed {
+    margin-left: calc(-1 * var(--exds-sidebar-width));
+  }
+  .docs__main {
+    padding: var(--exds-space-7);
+  }
+}
