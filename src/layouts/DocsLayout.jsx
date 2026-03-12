@@ -86,7 +86,7 @@ export default function DocsLayout() {
             <Menu size={20} strokeWidth={2} aria-hidden="true" />
           </button>
           <NavLink to="/" className="docs__logo">
-            <img src="/logo.svg" alt="Exchange Design System Logo" className="docs__logo-icon" width="32" height="32" />
+            <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Exchange Design System Logo" className="docs__logo-icon" width="32" height="32" />
             <span className="docs__logo-text">Exchange <span className="docs__logo-accent">Design System</span></span>
           </NavLink>
         </div>
