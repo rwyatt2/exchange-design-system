@@ -50,7 +50,7 @@ import DataEntryPatternPage from './pages/patterns/DataEntryPatternPage';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route element={<DocsLayout />}>
           <Route index element={<Home />} />

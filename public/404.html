@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exchange Design System</title>
+    <script>
+      // SPA redirect for GitHub Pages
+      // Converts 404 path back into a query param, then index.html restores it
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.host + l.pathname.split('/').slice(0, 2).join('/') +
+        '/?/' + l.pathname.slice(1) + (l.search ? '&' + l.search.slice(1) : '') + l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
